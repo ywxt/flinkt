@@ -1,0 +1,8 @@
+user1, https://www.baidu.com, 1000
+Alice, ./cart, 2000
+Bob, ./prod?id=100, 3000
+Bob, ./cart, 4000
+Bob, https://www.baidu.com, 5000
+user1, ./home, 6000
+Bob, ./prod?id=100, 7000
+Bob, ./cart, 8000
