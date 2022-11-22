@@ -10,7 +10,7 @@ public class StreamWordCount {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
-        DataStreamSource<String> dataSource = env.socketTextStream("localhost", 9999);
+        DataStreamSource<String> dataSource = env.socketTextStream("lab3", 9092);
         dataSource.flatMap(new FlatMapFunction<String, Tuple2<String, Long>>() {
             @Override
             public void flatMap(String value, Collector<Tuple2<String, Long>> out) throws Exception {
